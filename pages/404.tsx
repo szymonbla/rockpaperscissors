@@ -1,8 +1,9 @@
 import { Box, Typography } from '@mui/material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 
-const Home: NextPage = () => {
+const Custom404: NextPage = () => {
   return (
     <>
       <Head>
@@ -10,13 +11,9 @@ const Home: NextPage = () => {
         <meta name="description" content="Rock, paper, scissors" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box sx={{ backgroundColor: 'primary.light' }}>
-        <Typography variant="h1" sx={{ fontWeight: '600' }}>
-          Rock, Paper, Scissors
-        </Typography>
-      </Box>
+      {/* <Image src="/logo.png" layout="fill" alt="Rock paper scissors logo" /> */}
     </>
   );
 };
 
-export default Home;
+export default Custom404;
