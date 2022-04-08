@@ -1,22 +1,26 @@
+import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Menu } from '../components';
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Root>
       <Head>
         <title>RockPaperScissors</title>
         <meta name="description" content="Rock, paper, scissors" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicons/favicon.ico" />
       </Head>
-      <Box sx={{ backgroundColor: 'primary.light' }}>
-        <Typography variant="h1" sx={{ fontWeight: '600' }}>
-          Rock, Paper, Scissors
-        </Typography>
-      </Box>
-    </>
+      <Menu />
+    </Root>
   );
 };
+
+const Root = styled('div')`
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #fef0f0;
+`;
 
 export default Home;
