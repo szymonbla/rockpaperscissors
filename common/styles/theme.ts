@@ -39,7 +39,7 @@ export const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: ['Roboto', 'Helvetica', '"Open Sans"', 'sans-serif'].join(','),
+    fontFamily: ['Sora', 'Helvetica', '"Open Sans"', 'sans-serif'].join(','),
     h1: customHeaderFontSize(56),
     h2: customHeaderFontSize(48),
     h3: customHeaderFontSize(40),
