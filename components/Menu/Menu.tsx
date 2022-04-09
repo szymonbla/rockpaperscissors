@@ -28,7 +28,7 @@ export const Menu = () => {
               <LinkItem label={linkItem.label} href={linkItem.href} key={linkItem.label} />
             ))}
           </Grid>
-          <CTAButton label="Sign in" href="/her" />
+          <CTAButton label="Play" href="/her" sx={{ fontWeight: 800 }} />
         </Grid>
       </Container>
     </AppBar>
