@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { AppBar, Container, Grid } from '@mui/material';
 
 import { RoutesDefinition } from 'common';
-import { CTAButton, LinkItem } from 'common/styles';
+import { CTAButton, LinkItem, ThemeSwitcherButton } from 'common/styles';
 import Logo from './images/logo.png';
 
 export const Menu = () => {
@@ -28,6 +28,7 @@ export const Menu = () => {
               <LinkItem label={linkItem.label} href={linkItem.href} key={linkItem.label} />
             ))}
           </Grid>
+          <ThemeSwitcherButton />
           <CTAButton label="Play" href="/her" sx={{ fontWeight: 800 }} />
         </Grid>
       </Container>
